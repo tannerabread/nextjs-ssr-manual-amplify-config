@@ -1,3 +1,5 @@
+// rename this file to `aws-config.js` and add in your credentials
+
 const awsconfig = {
   Auth: {
     region: "XX-XXXX-X",
