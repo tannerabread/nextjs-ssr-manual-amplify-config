@@ -1,15 +1,13 @@
-import { Amplify, Auth, API, withSSRContext } from "aws-amplify";
+import { Amplify, Auth, withSSRContext } from "aws-amplify";
 import { Authenticator } from "@aws-amplify/ui-react";
 import "@aws-amplify/ui-react/styles.css";
-import awsconfig from '../src/aws-config';
+import awsconfig from "../src/aws-config";
 
 Amplify.Logger.LOG_LEVEL = "DEBUG";
 
-Amplify.configure({ ...awsconfig });
+Amplify.configure(awsconfig);
 
 export default function Home({ response }) {
-  // console.log({ response });
-
   return (
     <div>
       <Authenticator>
